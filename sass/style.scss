@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+/* ==============================
+
+カラーとフォントの定義
+
+============================== */
+
+/* ベースフォント */
+$base_font: "MyYuGothicM", "游ゴシック", "Yu Gothic", "YuGothic",
+  "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo",
+  "Noto Sans JP", "MS PGothic", sans-serif;
+
+$section_font: "Open Sans", sans-serif;
+
+$main_visual_font: "Montserrat", sans-serif;
+
+/* ベーステキストカラー */
+$base_font_color: #262626;
+
+/*　ベースリンクカラー */
+$black: #262626;
+$khaki: #5f5446;
+$orange: #c7613c;
+$navy: #262626;
+$blue: #243f64;
+$gray: #5d585a;
+$light-gray: #e4e5ea;
+$green: #cbd5bd;
+$beige: #efe6d8;
+$white: #eaeaea;
+
+/* ==============================
+
+共通のスタイル 
+
+============================== */
+body,
+html {
+  font-family: $base_font;
+  color: $base_font_color;
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* ==============================
+
+共通のクラス名に対するスタイル
+
+============================== */
+.section_lead {
+  font-family: $section_font;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.4em;
+  text-align: center;
+}
+
+/* ==============================
+
+header navi
+
+============================== */
+
+.menu_wrap {
+  width: 100%;
+  height: 180px;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  background-color: #eaeaea;
+}
+
+.menu_flex {
+  width: 1172px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+
+  li {
+    margin: 0 4px;
+  }
+  a {
+    img {
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.menu_frame {
+  width: 110px;
+  height: 110px;
+
+  img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+  }
+}
+.menu_textarea {
+  font-family: $section_font;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  margin-top: 8px;
+
+  p {
+    margin-top: 4px;
+  }
+}
+
+.menu_nav {
+  width: 100px;
+  height: 40px;
+  position: fixed;
+  top: 166px;
+  right: 0;
+  z-index: 300;
+  background-color: #eaeaea;
+  text-align: center;
+
+  span {
+    font-family: #8a8a8a;
+    font-weight: 100;
+    font-size: 11px;
+    line-height: 40px;
+    letter-spacing: 0.08em;
+    color: $gray;
+  }
+}
+
+.lnr-chevron-down {
+  color: #cacaca;
+}
+
+.menu_nav_title {
+  margin-left: 8px;
+}
+
+/* ==============================
+
+section mainvisual
+
+============================== */
+.mainvisual_wrap {
+  position: relative;
+}
+
+.mainvisual_frame {
+  width: 100%;
+  height: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.mainvisual_title {
+  position: absolute;
+  top: 158px;
+  left: 64px;
+  font-family: $section_font;
+  font-weight: 600;
+
+  h2 {
+    font-family: $main_visual_font;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+  }
+
+  h3 {
+    font-family: $section_font;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    letter-spacing: 0.1em;
+  }
+}
+
+/* ==============================
+
+section about
+
+============================== */
+
+.about {
+  width: 100%;
+  margin: 96px 0;
+  text-align: center;
+
+  h2,
+  p {
+    letter-spacing: 0.1em;
+    font-weight: 200;
+  }
+}
+
+.about_section_title {
+  font-size: 16px;
+  line-height: 1.8em;
+}
+.about_section_lead {
+  font-size: 13px;
+  margin-top: 32px;
+  line-height: 2.1em;
+}
+
+/* ==============================
+
+section product
+
+============================== */
+
+.product_flex_wrap {
+  width: 874px;
+  margin: 48px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_wrap {
+  width: 270px;
+}
+
+.product_image_link {
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.product_frame {
+  width: 100%;
+  height: auto;
+}
+
+.product_image {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.product_textarea {
+  margin-top: 18px;
+
+  span {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    line-height: 20px;
+    padding-bottom: 4px;
+  }
+}
+.product_textarea {
+  a {
+    &:hover {
+      border-bottom: 1px solid $black;
+    }
+  }
+}
+
+.product_link {
+  font-family: $section_font;
+  margin-left: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid $black;
+}
+
+/* ==============================
+
+section style
+
+============================== */
+
+.style {
+  width: 100%;
+  margin: 96px 0;
+}
+
+.style_wrap {
+  margin-top: 96px;
+}
+
+.style_content {
+  display: flex;
+}
+
+.style_frame {
+  width: 512px;
+  height: auto;
+
+  img {
+    width: 512px;
+    height: auto;
+    object-fit: fill;
+  }
+}
+
+.style_textarea {
+  margin: auto 96px;
+  font-family: $section_font;
+  font-size: 12px;
+}
+
+.style_subtitle {
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  margin-bottom: 32px;
+}
+
+.style_color_title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+}
+
+.style_link_wrap {
+  display: block;
+  font-family: $base_font;
+  margin-top: 80px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+}
+
+.style_item_link {
+  font-family: $section_font;
+  font-weight: 600;
+  margin-left: 16px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $black;
+}
+
+/* ==============================
+
+section content
+
+============================== */

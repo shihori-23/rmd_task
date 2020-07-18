@@ -1,0 +1,24 @@
+{
+  "name": "rmd_task",
+  "version": "1.0.0",
+  "description": "rmd_task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shihori-23/rmd_task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shihori-23/rmd_task/issues"
+  },
+  "homepage": "https://github.com/shihori-23/rmd_task#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}

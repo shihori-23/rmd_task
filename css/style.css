@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/* ==============================
+
+カラーとフォントの定義
+
+============================== */
+/* ベースフォント */
+/* ベーステキストカラー */
+/*　ベースリンクカラー */
+/* ==============================
+
+共通のスタイル 
+
+============================== */
+body,
+html {
+  font-family: "MyYuGothicM", "游ゴシック", "Yu Gothic", "YuGothic", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "Noto Sans JP", "MS PGothic", sans-serif;
+  color: #262626;
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* ==============================
+
+共通のクラス名に対するスタイル
+
+============================== */
+.section_lead {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.4em;
+  text-align: center;
+}
+
+/* ==============================
+
+header navi
+
+============================== */
+.menu_wrap {
+  width: 100%;
+  height: 180px;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  background-color: #eaeaea;
+}
+
+.menu_flex {
+  width: 1172px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu_flex li {
+  margin: 0 4px;
+}
+
+.menu_flex a img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.menu_flex a img:hover {
+  opacity: 0.5;
+}
+
+.menu_frame {
+  width: 110px;
+  height: 110px;
+}
+
+.menu_frame img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+}
+
+.menu_textarea {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  margin-top: 8px;
+}
+
+.menu_textarea p {
+  margin-top: 4px;
+}
+
+.menu_nav {
+  width: 100px;
+  height: 40px;
+  position: fixed;
+  top: 166px;
+  right: 0;
+  z-index: 300;
+  background-color: #eaeaea;
+  text-align: center;
+}
+
+.menu_nav span {
+  font-family: #8a8a8a;
+  font-weight: 100;
+  font-size: 11px;
+  line-height: 40px;
+  letter-spacing: 0.08em;
+  color: #5d585a;
+}
+
+.lnr-chevron-down {
+  color: #cacaca;
+}
+
+.menu_nav_title {
+  margin-left: 8px;
+}
+
+/* ==============================
+
+section mainvisual
+
+============================== */
+.mainvisual_wrap {
+  position: relative;
+}
+
+.mainvisual_frame {
+  width: 100%;
+  height: auto;
+}
+
+.mainvisual_frame img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.mainvisual_title {
+  position: absolute;
+  top: 158px;
+  left: 64px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.mainvisual_title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.mainvisual_title h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  letter-spacing: 0.1em;
+}
+
+/* ==============================
+
+section about
+
+============================== */
+.about {
+  width: 100%;
+  margin: 96px 0;
+  text-align: center;
+}
+
+.about h2,
+.about p {
+  letter-spacing: 0.1em;
+  font-weight: 200;
+}
+
+.about_section_title {
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+.about_section_lead {
+  font-size: 13px;
+  margin-top: 32px;
+  line-height: 2.1em;
+}
+
+/* ==============================
+
+section product
+
+============================== */
+.product_flex_wrap {
+  width: 874px;
+  margin: 48px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_wrap {
+  width: 270px;
+}
+
+.product_image_link {
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.product_image_link:hover {
+  opacity: 0.7;
+}
+
+.product_frame {
+  width: 100%;
+  height: auto;
+}
+
+.product_image {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.product_textarea {
+  margin-top: 18px;
+}
+
+.product_textarea span {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  line-height: 20px;
+  padding-bottom: 4px;
+}
+
+.product_textarea a:hover {
+  border-bottom: 1px solid #262626;
+}
+
+.product_link {
+  font-family: "Open Sans", sans-serif;
+  margin-left: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #262626;
+}
+
+/* ==============================
+
+section style
+
+============================== */
+.style {
+  width: 100%;
+  margin: 96px 0;
+}
+
+.style_wrap {
+  margin-top: 96px;
+}
+
+.style_content {
+  display: flex;
+}
+
+.style_frame {
+  width: 512px;
+  height: auto;
+}
+
+.style_frame img {
+  width: 512px;
+  height: auto;
+  object-fit: fill;
+}
+
+.style_textarea {
+  margin: auto 96px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
+
+.style_subtitle {
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  margin-bottom: 32px;
+}
+
+.style_color_title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+}
+
+.style_link_wrap {
+  display: block;
+  font-family: "MyYuGothicM", "游ゴシック", "Yu Gothic", "YuGothic", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "Noto Sans JP", "MS PGothic", sans-serif;
+  margin-top: 80px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+}
+
+.style_item_link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-left: 16px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #262626;
+}
+
+/* ==============================
+
+section content
+
+============================== */
