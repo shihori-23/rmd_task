@@ -25,7 +25,7 @@ html {
 共通のクラス名に対するスタイル
 
 ============================== */
-.section_lead {
+.section-lead {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -38,18 +38,22 @@ html {
 header navi
 
 ============================== */
-.menu_wrap {
+header {
+  position: relative;
+}
+
+.menu-wrap {
   width: 100%;
   height: 180px;
   padding: 16px;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: -180px;
   left: 0;
   z-index: 300;
   background-color: #eaeaea;
 }
 
-.menu_flex {
+.menu-flex {
   width: 1172px;
   margin-left: auto;
   margin-right: auto;
@@ -57,55 +61,56 @@ header navi
   justify-content: flex-start;
 }
 
-.menu_flex li {
+.menu-flex li {
   margin: 0 4px;
 }
 
-.menu_flex a img {
+.menu-flex a img {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.menu_flex a img:hover {
+.menu-flex a img:hover {
   opacity: 0.5;
 }
 
-.menu_frame {
+.menu-frame {
   width: 110px;
   height: 110px;
 }
 
-.menu_frame img {
+.menu-frame img {
   width: 110px;
   height: 110px;
   object-fit: cover;
 }
 
-.menu_textarea {
+.menu-textarea {
   font-family: "Open Sans", sans-serif;
   font-size: 11px;
   letter-spacing: 0.1em;
   margin-top: 8px;
 }
 
-.menu_textarea p {
+.menu-textarea p {
   margin-top: 4px;
 }
 
-.menu_nav {
+.menu-nav {
   width: 100px;
   height: 40px;
-  position: fixed;
-  top: 166px;
+  position: absolute;
+  top: 0;
   right: 0;
   z-index: 300;
   background-color: #eaeaea;
   text-align: center;
+  cursor: pointer;
 }
 
-.menu_nav span {
+.menu-nav span {
   font-family: #8a8a8a;
   font-weight: 100;
   font-size: 11px;
@@ -118,7 +123,7 @@ header navi
   color: #cacaca;
 }
 
-.menu_nav_title {
+.menu-nav-title {
   margin-left: 8px;
 }
 
@@ -127,22 +132,22 @@ header navi
 section mainvisual
 
 ============================== */
-.mainvisual_wrap {
+.mainvisual-wrap {
   position: relative;
 }
 
-.mainvisual_frame {
+.mainvisual-wrap {
   width: 100%;
   height: auto;
 }
 
-.mainvisual_frame img {
+.mainvisual-wrap img {
   width: 100%;
   height: auto;
   object-fit: contain;
 }
 
-.mainvisual_title {
+.mainvisual-title {
   position: absolute;
   top: 158px;
   left: 64px;
@@ -150,14 +155,14 @@ section mainvisual
   font-weight: 600;
 }
 
-.mainvisual_title h2 {
+.mainvisual-title h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 0.15em;
 }
 
-.mainvisual_title h3 {
+.mainvisual-title h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -182,12 +187,12 @@ section about
   font-weight: 200;
 }
 
-.about_section_title {
+.about-section-title {
   font-size: 16px;
   line-height: 1.8em;
 }
 
-.about_section_lead {
+.about-section-lead {
   font-size: 13px;
   margin-top: 32px;
   line-height: 2.1em;
@@ -198,18 +203,18 @@ section about
 section product
 
 ============================== */
-.product_flex_wrap {
+.product-flex-wrap {
   width: 874px;
   margin: 48px auto;
   display: flex;
   justify-content: space-between;
 }
 
-.product_wrap {
+.product-wrap {
   width: 270px;
 }
 
-.product_image_link {
+.product-image-link {
   display: block;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -217,40 +222,44 @@ section product
   transition: all 0.5s ease;
 }
 
-.product_image_link:hover {
+.product-image-link:hover {
   opacity: 0.7;
 }
 
-.product_frame {
+.product-frame {
   width: 100%;
   height: auto;
 }
 
-.product_image {
+.product-image {
   width: 100%;
   height: auto;
   object-fit: fill;
 }
 
-.product_textarea {
+.product-textarea {
   margin-top: 18px;
 }
 
-.product_textarea span {
+.product-textarea span {
   font-size: 11px;
   letter-spacing: 0.1em;
   line-height: 20px;
   padding-bottom: 4px;
 }
 
-.product_textarea a:hover {
-  border-bottom: 1px solid #262626;
-}
-
-.product_link {
+.product-link__link {
   font-family: "Open Sans", sans-serif;
   margin-left: 16px;
   font-weight: 600;
+  border-bottom: 1px solid #262626;
+}
+
+.product-link:hover > .product-link__name {
+  border-bottom: 1px solid #262626;
+}
+
+.product-link:hover　 > .product-link__price {
   border-bottom: 1px solid #262626;
 }
 
@@ -264,44 +273,122 @@ section style
   margin: 96px 0;
 }
 
-.style_wrap {
+.style-wrap {
   margin-top: 96px;
 }
 
-.style_content {
+.style-content {
   display: flex;
+  margin: 96px 0;
 }
 
-.style_frame {
+.style-navigation-area {
+  margin: auto 16px;
+  width: 64px;
+}
+
+.style-navigation li {
+  display: inline-block;
+  border: 4px solid #fff;
+  margin: 2px 24px;
+}
+
+.style-navigation li.is-active {
+  border: 4px solid #dfdfdf;
+  border-radius: 50%;
+}
+
+.style-navigation li.is-active a {
+  border: none;
+}
+
+.style-navigation li a {
+  display: block;
+  width: 8px;
+  height: 8px;
+  font-size: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: none;
+  transition: 0.2s ease-in-out;
+}
+
+.style-navigation-button {
+  border-radius: 50%;
+}
+
+.style-nav-white {
+  background-color: #ffffff;
+  border: 2px solid #e4e5ea;
+}
+
+.style-nav-milk-tea {
+  background-color: #efe6d8;
+}
+
+.style-nav-sage {
+  background-color: #cbd5bd;
+}
+
+.style-nav-heather-gray {
+  background-color: #e4e5ea;
+}
+
+.style-nav-gray {
+  background-color: #5d585a;
+}
+
+.style-nav-marine-blue {
+  background-color: #243f64;
+}
+
+.style_nav_navy {
+  background-color: #262626;
+}
+
+.style-nav-orange {
+  background-color: #c7613c;
+}
+
+.style-nav-khaki {
+  background-color: #b4a362;
+}
+
+.style-nav-black {
+  background-color: #262626;
+}
+
+.style-frame {
   width: 512px;
   height: auto;
 }
 
-.style_frame img {
+.style-frame img {
   width: 512px;
   height: auto;
   object-fit: fill;
 }
 
-.style_textarea {
+.style-textarea {
   margin: auto 96px;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
 }
 
-.style_subtitle {
+.style-subtitle {
   font-weight: 600;
   letter-spacing: 0.2em;
   margin-bottom: 32px;
 }
 
-.style_color_title {
+.style-color-title {
   font-size: 32px;
   font-weight: 600;
   letter-spacing: 0.3em;
 }
 
-.style_link_wrap {
+.style-link-wrap {
   display: block;
   font-family: "MyYuGothicM", "游ゴシック", "Yu Gothic", "YuGothic", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "Noto Sans JP", "MS PGothic", sans-serif;
   margin-top: 80px;
@@ -309,7 +396,7 @@ section style
   letter-spacing: 0.1em;
 }
 
-.style_item_link {
+.style-item-link {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   margin-left: 16px;
@@ -319,6 +406,61 @@ section style
 
 /* ==============================
 
-section content
+footer section 
 
 ============================== */
+.footer {
+  width: 100%;
+  font-size: 14px;
+}
+
+.page-top-btn {
+  text-align: center;
+  margin: 96px auto;
+}
+
+.lnr-chevron-up {
+  font-size: 70px;
+  color: #262626;
+}
+
+.page-top-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 32px;
+}
+
+.footer-flex-wrap {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-flex-wrap li {
+  display: inline-block;
+}
+
+.footer-flex-wrap a:hover {
+  opacity: 0.7;
+}
+
+.footer-left-wrap a {
+  margin: 0 6px;
+}
+
+.footer-left-name {
+  font-family: "Montserrat", sans-serif;
+  color: #a9a9a9;
+  letter-spacing: 0.08em;
+  margin: 0 32px 0 0;
+}
+
+.footer-right-wrap {
+  font-size: 12px;
+}
+
+.footer-right-wrap a {
+  margin: 0 8px;
+}
