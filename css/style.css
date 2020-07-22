@@ -7,6 +7,31 @@
 /* ベースフォント */
 /* ベーステキストカラー */
 /*　ベースリンクカラー */
+/*　フォント */
+@font-face {
+  font-family: MyYuGothicM;
+  font-weight: 400;
+  src: local("YuGothic-Medium"), local("Yu Gothic Medium"), local("YuGothic-Regular");
+}
+
+@font-face {
+  font-family: MyYuGothicM;
+  font-weight: 700;
+  src: local("YuGothic-Bold"), local("Yu Gothic Bold");
+}
+
+@font-face {
+  font-family: MyYuMinchoM;
+  font-weight: 400;
+  src: local("YuMincho-Medium"), local("Yu Mincho Medium"), local("YuMincho-Regular");
+}
+
+@font-face {
+  font-family: MyYuMinchoM;
+  font-weight: 700;
+  src: local("YuMincho-Demibold"), local("Yu Mincho");
+}
+
 /* ==============================
 
 共通のスタイル 
@@ -271,15 +296,23 @@ section style
 .style {
   width: 100%;
   margin: 96px 0;
+  background-color: #fff;
 }
 
 .style-wrap {
-  margin-top: 96px;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .style-content {
   display: flex;
-  margin: 96px 0;
+  padding: 56px 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  scroll-snap-align: start;
 }
 
 .style-navigation-area {
@@ -343,7 +376,7 @@ section style
   background-color: #243f64;
 }
 
-.style_nav_navy {
+.style-nav-navy {
   background-color: #262626;
 }
 
