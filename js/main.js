@@ -4,9 +4,10 @@ $(document).ready(function () {
   /**
    *
    * @param {Object} windowSize・・・画面のサイズ
-   * @param {Object} windowSize・・・画面のサイズ半分を取得
+   * @param {Object} half・・・・・・画面のサイズ半分を取得
    * @param {Object} $el・・・・・・・使用する要素を定義
    * @param {Object} scrollTop・・・要素までの距離を定義
+   * @param {Object} toggle・・・・・トップへ戻るの際に使用する真偽値
    *
    **/
 
@@ -16,6 +17,7 @@ $(document).ready(function () {
     width: $(window).width(),
   };
 
+  // 画面のサイズ半分を取得
   var half = {
     width: windowSize.width / 2,
     height: windowSize.height / 2,
@@ -55,12 +57,9 @@ $(document).ready(function () {
     pageTop: false,
   };
 
-  //
+  //　【関数を定義】
 
-  //　関数を定義
-
-  // MENUの表示非表示切り替え
-  //　メニューを開く
+  //　メニュータブを開く
   function openMenuNav() {
     $el.menuWrap.toggleClass("js-is-visible-menu");
     $el.menuNavOpen.toggleClass("js-hidden");
@@ -68,7 +67,7 @@ $(document).ready(function () {
     $el.overlay.toggleClass("js-hidden-overlay");
   }
 
-  // //　メニューを閉じる
+  //　メニュータブを閉じる
   function closeMenuNav() {
     $el.menuWrap.toggleClass("js-is-visible-menu");
     $el.menuNavOpen.toggleClass("js-hidden");
@@ -113,7 +112,7 @@ $(document).ready(function () {
   $el.overlay.click(function () {
     closeMenuNav();
   });
-
+  // メニューのリンクがクリックされたらメニューなどを閉じる
   $("#menuWrap a").click(function () {
     closeMenuNav();
   });
@@ -148,7 +147,7 @@ $(document).ready(function () {
   const sum = scrollTop.style + windowSize.height;
   const borderLine = sum + 10;
 
-  //　StyleSectionの波線アニメーションのクラスを追加・削除
+  //　StyleSectionの波線アニメーションのクラスを追加・削除の関数
   const addClassWavyLine = function (win) {
     if (win < clientHeight) {
       $(".wavy-line-svg").removeClass("is-active");
