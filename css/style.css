@@ -43,6 +43,7 @@ html {
   color: #262626;
   font-size: 14px;
   line-height: 1;
+  scroll-behavior: smooth;
 }
 
 /* ==============================
@@ -76,6 +77,16 @@ header {
   left: 0;
   z-index: 300;
   background-color: #eaeaea;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.menu-wrap.js-is-visible-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .menu-flex {
@@ -126,13 +137,18 @@ header {
 .menu-nav {
   width: 100px;
   height: 40px;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 300;
   background-color: #eaeaea;
   text-align: center;
+  opacity: 1;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .menu-nav span {
@@ -144,12 +160,42 @@ header {
   color: #5d585a;
 }
 
+.menu-nav.js-is-visible {
+  position: fixed;
+  top: 180px;
+  right: 0;
+}
+
+.menu-nav.js-hidden {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.5s z-index 0.5s;
+}
+
 .lnr-chevron-down {
   color: #cacaca;
 }
 
 .menu-nav-title {
   margin-left: 8px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.3;
+  z-index: 200;
+}
+
+.overlay.js-hidden-overlay {
+  display: none;
 }
 
 /* ==============================
@@ -159,6 +205,21 @@ section mainvisual
 ============================== */
 .mainvisual-wrap {
   position: relative;
+  animation: mainVisualActive 3s ease-in both 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mainVisualActive {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .mainvisual-wrap {
@@ -295,14 +356,20 @@ section style
 ============================== */
 .style {
   width: 100%;
+  height: auto;
   margin: 96px 0;
   background-color: #fff;
 }
 
+.style h2 {
+  margin: 32px 0;
+}
+
 .style-wrap {
+  padding: 64px 0;
   width: 100vw;
   height: 100vh;
-  overflow: scroll;
+  overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
@@ -393,18 +460,24 @@ section style
 }
 
 .style-frame {
-  width: 512px;
+  width: 45%;
+  max-width: 512px;
   height: auto;
 }
 
 .style-frame img {
-  width: 512px;
+  width: 100%;
   height: auto;
   object-fit: fill;
 }
 
+.style-right-frame {
+  position: relative;
+  width: 45%;
+}
+
 .style-textarea {
-  margin: auto 96px;
+  margin: 210px 96px 0;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
 }
@@ -421,20 +494,58 @@ section style
   letter-spacing: 0.3em;
 }
 
-.style-link-wrap {
+.style-item-link {
   display: block;
   font-family: "MyYuGothicM", "游ゴシック", "Yu Gothic", "YuGothic", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "Noto Sans JP", "MS PGothic", sans-serif;
   margin-top: 80px;
-  line-height: 20px;
+  line-height: 24px;
   letter-spacing: 0.1em;
 }
 
-.style-item-link {
+.style-item-link__link {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   margin-left: 16px;
   padding-bottom: 4px;
   border-bottom: 1px solid #262626;
+}
+
+.style-item-link:hover > .style-item-link__name {
+  border-bottom: 1px solid #262626;
+}
+
+.style-item-link:hover　 > .style-item-link__price {
+  border-bottom: 1px solid #262626;
+}
+
+.wavy-line {
+  position: absolute;
+  top: 0;
+  left: 350px;
+  width: 100%;
+  z-index: 400;
+}
+
+.wavy-line .wavy-line-svg {
+  stroke-opacity: 0;
+}
+
+.wavy-line .wavy-line-svg.is-active {
+  stroke-opacity: 1;
+  animation: svg 2s ease-in both 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes svg {
+  0% {
+    fill: transparent;
+    stroke-dasharray: 2000px;
+    stroke-dashoffset: 2000px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 /* ==============================
@@ -461,7 +572,7 @@ footer section
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
-  margin: 32px;
+  margin-bottom: 32px;
 }
 
 .footer-flex-wrap {
@@ -496,4 +607,15 @@ footer section
 
 .footer-right-wrap a {
   margin: 0 8px;
+}
+
+/* ==============================
+
+画面幅に応じてスタイルセクションの表示を変更
+
+============================== */
+@media screen and (min-width: 1200px) {
+  .style-navigation-area {
+    margin-right: 64px;
+  }
 }
