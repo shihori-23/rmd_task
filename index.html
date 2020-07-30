@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RIDE MEDIA & DESIGN</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/0c0068477d.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <header id="header" class="header">
+        <div id="menuWrap" class="menu-wrap">
+            <ul class="menu-flex">
+                <li class="menu-content">
+                    <a href="#styleWhite" target="_self">
+                        <div class="menu-frame">
+                            <img src="img/style_1.jpg" alt="Whiteスタイル画像">
+                        </div>
+                        <div class="menu-textarea">
+                            <p class="menu-number">#01</p>
+                            <p class="menu-color">White</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-content">
+                    <a href="#styleMilkTea" target="_self">
+                        <div class="menu-frame">
+                            <img src="img/style_2.jpg" alt="Milk teaスタイル画像">
+                        </div>
+                        <div class="menu-textarea">
+                            <p class="menu-number">#02</p>
+                            <p class="menu-color">Milk tea</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-content">
+                    <a href="#styleSage" target="_self">
+                        <div class="menu-frame">
+                            <img src="img/style_3.jpg" alt="Sageスタイル画像">
+                        </div>
+                        <div class="menu-textarea">
+                            <p class="menu-number">#03</p>
+                            <p class="menu-color">Sage</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-content">
+                    <a href="#styleHeatherGray" target="_self">
+                        <div class="menu-frame">
+                            <img src="img/style_4.jpg" alt="Heather grayスタイル画像">
+                        </div>
+                        <div class="menu-textarea">
+                            <p class="menu-number">#04</p>
+                            <p class="menu-color">Heather gray</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-content">
+                    <a href="#styleGray" target="_self">
+                        <div class="menu-frame">
+                            <img src="img/style_5.jpg" alt="Grayスタイル画像">
+                        </div>
+                        <div class="menu-textarea">
+                            <p class="menu-number">#05</p>
+                            <p class="menu-color">Gray</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-content">
+                    <a href="#styleMarineBlue" target="_self">
+                        <div class="menu-frame">
+                            <img src="img/style_6.jpg" alt="Marine blueスタイル画像">
+                        </div>
+                        <div class="menu-textarea">
+                            <p class="menu-number">#06</p>
+                            <p class="menu-color">Marine blue</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-content">
+                    <a href="#styleNavy" target="_self">
+                        <div class="menu-frame">
+                            <img src="img/style_7.jpg" alt="Navyスタイル画像">
+                        </div>
+                        <div class="menu-textarea">
+                            <p class="menu-number">#07</p>
+                            <p class="menu-color">Navy</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-content">
+                    <a href="#styleOrange" target="_self">
+                        <div class="menu-frame">
+                            <img src="img/style_8.jpg" alt="Orangeスタイル画像">
+                        </div>
+                        <div class="menu-textarea">
+                            <p class="menu-number">#08</p>
+                            <p class="menu-color">Orange</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-content">
+                    <a href="#styleKhaki" target="_self">
+                        <div class="menu-frame">
+                            <img src="img/style_9.jpg" alt="Khakiスタイル画像">
+                        </div>
+                        <div class="menu-textarea">
+                            <p class="menu-number">#09</p>
+                            <p class="menu-color">Khaki</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-content">
+                    <a href="#styleBlack" target="_self">
+                        <div class="menu-frame">
+                            <img src="img/style_10.jpg" alt="Blackスタイル画像">
+                        </div>
+                        <div class="menu-textarea">
+                            <p class="menu-number">#10</p>
+                            <p class="menu-color">Black</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+      <div id="menuNavOpen" class="menu-nav menu-nav-open">
+        <span class="lnr lnr-chevron-down"></span><span class="menu-nav-title">MENU</span>
+      </div>
+      <div id="menuNavClose" class="menu-nav menu-nav-close js-hidden">
+        <span class="lnr lnr-chevron-up"></span><span class="menu-nav-title">MENU</span>
+      </div>
+      <div id="overlayBg" class="overlay js-hidden-overlay"></div>
+    </header>
+
+    <main class="main-wrap">
+      <section id="mainVisual" class="mainvisual">
+        <div class="mainvisual-wrap">
+            <div class="mainvisual-frame">
+                <img
+                    src="img/mainvisual.jpg"
+                    alt="ブランドイメージ"
+                    class="mainvisual-img"
+                />
+            </div>
+            <div class="mainvisual-title">
+                <h3 class="mainvisual-sub-title">RIDE MEDIA&DESIGN</h3>
+                <h1 class="mainvisual-main-title">Winter Collection</h1>
+            </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2 class="about-section-title">
+          キャッチがはいりますキャッチがはいりますキャッチが<br />はいりますキャッチがはいります
+        </h2>
+        <p class="about-section-lead">
+          リードがはいりますリードがはいります<br />リードがはいりますリードがはいりますリードがはいりますリードが<br />はいりますリードがはいりますリードがはいります
+        </p>
+      </section>
+
+      <section id="product" class="product">
+        <h2 class="product-section-lead section-lead">PRODUCT</h2>
+        <div class="product-flex-wrap">
+            <div class="product-1 product-wrap">
+                <a href="" target="_blank" class="product-image-link">
+                    <div class="product-frame">
+                    <img
+                        src="img/product_1.jpg"
+                        alt="ファインウール　クルーネックプルオーバ"
+                        class="product-image"
+                    />
+                    </div>
+                </a>
+                <div class="product-textarea">
+                    <a href="" target="_blank" class="product-link">
+                        <span class="product-link__name">
+                            ファインウール　クルーネックプルオーバ<br>
+                        ￥27,000 (+tax)</span><span class="product-link__link">view</span class="product_price">
+                    </a>
+                </div>
+            </div>
+            <div class="product-2 product-wrap">
+                <a href="" target="_blank" class="product-image-link">
+                    <div class="product-frame">
+                    <img
+                        src="img/product_2.jpg"
+                        alt="ファインウール　クルーネックプルオーバ"
+                        class="product-image"
+                    />
+                    </div>
+                </a>
+                <div class="product-textarea">
+                    <a href="" target="_blank" class="product-link">
+                        <span class="product-link__name">
+                            ファインウール　クルーネックプルオーバ<br>
+                        ￥27,000 (+tax)</span><span class="product-link__link">view</span class="product_price">
+                    </a>
+                </div>
+            </div>
+            <div class="product-3 product-wrap">
+                <a href="" target="_blank" class="product-image-link">
+                    <div class="product-frame">
+                    <img
+                        src="img/product_3.jpg"
+                        alt="ファインウール　クルーネックプルオーバ"
+                        class="product-image"
+                    />
+                    </div>
+                </a>
+                <div class="product-textarea">
+                    <a href="" target="_blank" class="product-link">
+                        <span class="product-link__name">
+                            ファインウール　クルーネックプルオーバ<br>
+                        ￥27,000 (+tax)</span><span class="product-link__link">view</span class="product_price">
+                    </a>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section id="style" class="style">
+        <h2 class="style-section-lead section-lead">STYLE</h2>
+        <div id="styleWrap"class="style-wrap main-content-wrapper">
+            <div id="styleWhite" class="style-content white-content">
+                <div class="style-navigation-area">
+                    <ul class="style-navigation">
+                        <li class="is-active">
+                            <a href="#styleWhite" target="_self"　data-box=".style-wrap" class="style-navigation-button style-nav-white">1</a>
+                        </li>
+                        <li>
+                            <a href="#styleMilkTea" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-milk-tea">2</a>
+                        </li>
+                        <li>
+                            <a href="#styleSage" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-sage">3</a>
+                        </li>
+                        <li>
+                            <a href="#styleHeatherGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-heather-gray">4</a>
+                        </li>
+                        <li>
+                            <a href="#styleGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-gray">5</a>
+                        </li>
+                        <li>
+                            <a href="#styleMarineBlue" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-marine-blue">6</a>
+                        </li>
+                        <li>
+                            <a href="#styleNavy" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-navy">7</a>
+                        </li>
+                        <li>
+                            <a href="#styleOrange" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-orange">8</a>
+                        </li>
+                        <li>
+                            <a href="#styleKhaki" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-khaki">9</a>
+                        </li>
+                        <li>
+                            <a href="#styleBlack" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-black">10</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="style-frame">
+                    <img src="img/style_1.jpg" alt="Whiteのコーディネート画像">
+                </div>
+                <div class="style-right-frame">
+                    <div class="style-textarea">
+                        <p class="style-subtitle">color #01</p>
+                        <p class="style-color-title">White</p>
+
+                        <a href="" target="_blank" class="style-item-link">
+                            <span class="style-item-link__name">ファインウール　クルーネックプルオーバ<br>
+                            ￥27,000 (+tax)</span><span class="style-item-link__link">view</span>
+                        </a>
+                    </div>
+                    <div class="wavy-line">
+                        <svg width="100" height="682" viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg"> 
+                            <path d="M 0,-682 Q 150 -341 10 10 T 50 682" fill="none" stroke="#efe6d8" stroke-width="2" id="wavyLineSvgWhite" class="wavy-line-svg　is-active"/>
+                        </svg> 
+                    </div>
+                </div>
+            </div>
+            <div id="styleMilkTea" class="style-content milk-tea-content">
+                <div class="style-navigation-area">
+                    <ul class="style-navigation">
+                        <li>
+                            <a href="#styleWhite" data-box=".style-wrap" class="style-navigation-button style-nav-white">1</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="#styleMilkTea" data-box=".style-wrap" class="style-navigation-button style-nav-milk-tea">2</a>
+                        </li>
+                        <li>
+                            <a href="#styleSage" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-sage">3</a>
+                        </li>
+                        <li>
+                            <a href="#styleHeatherGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-heather-gray">4</a>
+                        </li>
+                        <li>
+                            <a href="#styleGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-gray">5</a>
+                        </li>
+                        <li>
+                            <a href="#styleMarineBlue" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-marine-blue">6</a>
+                        </li>
+                        <li>
+                            <a href="#styleNavy" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-navy">7</a>
+                        </li>
+                        <li>
+                            <a href="#styleOrange" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-orange">8</a>
+                        </li>
+                        <li>
+                            <a href="#styleKhaki" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-khaki">9</a>
+                        </li>
+                        <li>
+                            <a href="#styleBlack" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-black">10</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="style-frame">
+                    <img src="img/style_2.jpg" alt="Milk Teaのコーディネート画像">
+                </div>
+                <div class="style-right-frame">
+                    <div class="style-textarea">
+                        <p class="style-subtitle">color #02</p>
+                        <p class="style-color-title">Milk Tea</p>
+
+                        <a href="" target="_blank" class="style-item-link">
+                            <span class="style-item-link__name">ファインウール　クルーネックプルオーバ<br>
+                            ￥27,000 (+tax)</span><span class="style-item-link__link">view</span>
+                        </a>
+                    </div>
+                    <div class="wavy-line">
+                        <svg width="100" height="682" viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg"> 
+                            <path d="M 50,-682 Q 160 -341 28 28 T -35 682" fill="none" stroke="#efe6d8" stroke-width="2" id="wavyLineSvgMilkTea" class="wavy-line-svg"/>
+                        </svg> 
+                    </div>
+                </div>
+            </div>
+            <div id="styleSage" class="style-content sage-content">
+                <div class="style-navigation-area">
+                    <ul class="style-navigation">
+                        <li>
+                            <a href="#styleWhite" data-box=".style-wrap" class="style-navigation-button style-nav-white">1</a>
+                        </li>
+                        <li>
+                            <a href="#styleMilkTea" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-milk-tea">2</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="#styleSage" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-sage">3</a>
+                        </li>
+                        <li>
+                            <a href="#styleHeatherGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-heather-gray">4</a>
+                        </li>
+                        <li>
+                            <a href="#styleGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-gray">5</a>
+                        </li>
+                        <li>
+                            <a href="#styleMarineBlue" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-marine-blue">6</a>
+                        </li>
+                        <li>
+                            <a href="#styleNavy" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-navy">7</a>
+                        </li>
+                        <li>
+                            <a href="#styleOrange" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-orange">8</a>
+                        </li>
+                        <li>
+                            <a href="#styleKhaki" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-khaki">9</a>
+                        </li>
+                        <li>
+                            <a href="#styleBlack" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-black">10</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="style-frame">
+                    <img src="img/style_3.jpg" alt="Sageのコーディネート画像">
+                </div>
+                <div class="style-right-frame">
+                    <div class="style-textarea">
+                        <p class="style-subtitle">color #03</p>
+                        <p class="style-color-title">Sage</p>
+
+                        <a href="" target="_blank" class="style-item-link">
+                            <span class="style-item-link__name">ファインウール　クルーネックプルオーバ<br>
+                            ￥27,000 (+tax)</span><span class="style-item-link__link">view</span>
+                        </a>
+                    </div>
+                    <div class="wavy-line">
+                        <svg width="100" height="682"  viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg"> 
+                            <path d="M -35,-682 Q 150 -341 10 10 T 50 682" fill="none" stroke="#cbd5bd" stroke-width="2" id="wavyLineSvgSage" class="wavy-line-svg"/>
+                        </svg> 
+                    </div>
+            </div>
+            </div>
+            <div id="styleHeatherGray" class="style-content heather-gray-content">
+                <div class="style-navigation-area">
+                    <ul class="style-navigation">
+                        <li>
+                            <a href="#styleWhite" data-box=".style-wrap" class="style-navigation-button style-nav-white">1</a>
+                        </li>
+                        <li>
+                            <a href="#styleMilkTea" data-box=".style-wrap" class="style-navigation-button style-nav-milk-tea">2</a>
+                        </li>
+                        <li>
+                            <a href="#styleSage" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-sage">3</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="#styleHeatherGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-heather-gray">4</a>
+                        </li>
+                        <li>
+                            <a href="#styleGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-gray">5</a>
+                        </li>
+                        <li>
+                            <a href="#styleMarineBlue" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-marine-blue">6</a>
+                        </li>
+                        <li>
+                            <a href="#styleNavy" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-navy">7</a>
+                        </li>
+                        <li>
+                            <a href="#styleOrange" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-orange">8</a>
+                        </li>
+                        <li>
+                            <a href="#styleKhaki" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-khaki">9</a>
+                        </li>
+                        <li>
+                            <a href="#styleBlack" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-black">10</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="style-frame">
+                    <img src="img/style_4.jpg" alt="Heather Grayのコーディネート画像">
+                </div>
+                <div class="style-right-frame">
+                    <div class="style-textarea">
+                        <p class="style-subtitle">color #04</p>
+                        <p class="style-color-title">Heather Gray</p>
+
+                        <a href="" target="_blank" class="style-item-link">
+                            <span class="style-item-link__name">ファインウール　クルーネックプルオーバ<br>
+                            ￥27,000 (+tax)</span><span class="style-item-link__link">view</span>
+                        </a>
+                    </div>
+                    <div class="wavy-line">
+                        <svg width="100" height="682"  viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg"> 
+                            <path d="M 50,-682 Q 100 -341 -25 -25 T -40 682" fill="none" stroke="#e4e5ea" stroke-width="2" id="wavyLineSvgHeatherGray" class="wavy-line-svg"/>
+                        </svg> 
+                    </div>
+                </div>
+            </div>
+            <div id="styleGray" class="style-content gray-content">
+                <div class="style-navigation-area">
+                    <ul class="style-navigation">
+                        <li>
+                            <a href="#styleWhite" data-box=".style-wrap" class="style-navigation-button style-nav-white">1</a>
+                        </li>
+                        <li>
+                            <a href="#styleMilkTea" data-box=".style-wrap" class="style-navigation-button style-nav-milk-tea">2</a>
+                        </li>
+                        <li>
+                            <a href="#styleSage" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-sage">3</a>
+                        </li>
+                        <li>
+                            <a href="#styleHeatherGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-heather-gray">4</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="#styleGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-gray">5</a>
+                        </li>
+                        <li>
+                            <a href="#styleMarineBlue" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-marine-blue">6</a>
+                        </li>
+                        <li>
+                            <a href="#styleNavy" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-navy">7</a>
+                        </li>
+                        <li>
+                            <a href="#styleOrange" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-orange">8</a>
+                        </li>
+                        <li>
+                            <a href="#styleKhaki" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-khaki">9</a>
+                        </li>
+                        <li>
+                            <a href="#styleBlack" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-black">10</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="style-frame">
+                    <img src="img/style_5.jpg" alt="Grayのコーディネート画像">
+                </div>
+                <div class="style-right-frame">
+                    <div class="style-textarea">
+                        <p class="style-subtitle">color #05</p>
+                        <p class="style-color-title">Gray</p>
+
+                        <a href="" target="_blank" class="style-item-link">
+                            <span class="style-item-link__name">ファインウール　クルーネックプルオーバ<br>
+                            ￥27,000 (+tax)</span><span class="style-item-link__link">view</span>
+                        </a>
+                    </div>
+                    <div class="wavy-line">
+                        <svg width="100" height="682"  viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg"> 
+                            <path d="M -40,-682 Q 100 -200 -20 -20 T 30 682" fill="none" stroke="#5d585a" stroke-width="2" id="wavyLineSvgGray" class="wavy-line-svg"/>
+                        </svg> 
+                    </div>
+            </div>
+            </div>
+            <div id="styleMarineBlue" class="style-content marine-blue-content">
+                <div class="style-navigation-area">
+                    <ul class="style-navigation">
+                        <li>
+                            <a href="#styleWhite" data-box=".style-wrap" class="style-navigation-button style-nav-white">1</a>
+                        </li>
+                        <li>
+                            <a href="#styleMilkTea" data-box=".style-wrap" class="style-navigation-button style-nav-milk-tea">2</a>
+                        </li>
+                        <li>
+                            <a href="#styleSage" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-sage">3</a>
+                        </li>
+                        <li>
+                            <a href="#styleHeatherGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-heather-gray">4</a>
+                        </li>
+                        <li>
+                            <a href="#styleGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-gray">5</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="#styleMarineBlue" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-marine-blue">6</a>
+                        </li>
+                        <li>
+                            <a href="#styleNavy" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-navy">7</a>
+                        </li>
+                        <li>
+                            <a href="#styleOrange" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-orange">8</a>
+                        </li>
+                        <li>
+                            <a href="#styleKhaki" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-khaki">9</a>
+                        </li>
+                        <li>
+                            <a href="#styleBlack" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-black">10</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="style-frame">
+                    <img src="img/style_6.jpg" alt="Marine Blueのコーディネート画像">
+                </div>
+                <div class="style-right-frame">
+                    <div class="style-textarea">
+                        <p class="style-subtitle">color #06</p>
+                        <p class="style-color-title">Marine Blue</p>
+
+                        <a href="" target="_blank" class="style-item-link">
+                            <span class="style-item-link__name">ファインウール　クルーネックプルオーバ<br>
+                            ￥27,000 (+tax)</span><span class="style-item-link__link">view</span>
+                        </a>
+                    </div>
+                    <div class="wavy-line">
+                        <svg width="100" height="682"  viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg"> 
+                            <path d="M 30,-682 Q 160 -200 10 10 T 0 682" fill="none" stroke="#243f64" stroke-width="2" id="wavyLineSvgMarineBlue" class="wavy-line-svg"/>
+                        </svg> 
+                    </div>
+                </div>
+            </div>
+            <div id="styleNavy" class="style-content navy-content">
+                <div class="style-navigation-area">
+                    <ul class="style-navigation">
+                        <li>
+                            <a href="#styleWhite" data-box=".style-wrap" class="style-navigation-button style-nav-white">1</a>
+                        </li>
+                        <li>
+                            <a href="#styleMilkTea" data-box=".style-wrap" class="style-navigation-button style-nav-milk-tea">2</a>
+                        </li>
+                        <li>
+                            <a href="#styleSage" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-sage">3</a>
+                        </li>
+                        <li>
+                            <a href="#styleHeatherGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-heather-gray">4</a>
+                        </li>
+                        <li>
+                            <a href="#styleGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-gray">5</a>
+                        </li>
+                        <li>
+                            <a href="#styleMarineBlue" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-marine-blue">6</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="#styleNavy" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-navy">7</a>
+                        </li>
+                        <li>
+                            <a href="#styleOrange" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-orange">8</a>
+                        </li>
+                        <li>
+                            <a href="#styleKhaki" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-khaki">9</a>
+                        </li>
+                        <li>
+                            <a href="#styleBlack" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-black">10</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="style-frame">
+                    <img src="img/style_7.jpg" alt="Navyのコーディネート画像">
+                </div>
+                <div class="style-right-frame">
+                    <div class="style-textarea">
+                        <p class="style-subtitle">color #07</p>
+                        <p class="style-color-title">Navy</p>
+
+                        <a href="" target="_blank" class="style-item-link">
+                            <span class="style-item-link__name">ファインウール　クルーネックプルオーバ<br>
+                            ￥27,000 (+tax)</span><span class="style-item-link__link">view</span>
+                        </a>
+                    </div>
+                    <div class="wavy-line">
+                        <svg width="100" height="682"  viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg"> 
+                            <path d="M 0,-682 Q 150 -341 10 10 T 30 682" fill="none" stroke="#262626" stroke-width="2" id="wavyLineSvgNavy" class="wavy-line-svg"/>
+                        </svg> 
+                    </div>
+                </div>
+            </div>
+            <div id="styleOrange" class="style-content orange-content">
+                <div class="style-navigation-area">
+                    <ul class="style-navigation">
+                        <li>
+                            <a href="#styleWhite" data-box=".style-wrap" class="style-navigation-button style-nav-white">1</a>
+                        </li>
+                        <li>
+                            <a href="#styleMilkTea" data-box=".style-wrap" class="style-navigation-button style-nav-milk-tea">2</a>
+                        </li>
+                        <li>
+                            <a href="#styleSage" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-sage">3</a>
+                        </li>
+                        <li>
+                            <a href="#styleHeatherGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-heather-gray">4</a>
+                        </li>
+                        <li>
+                            <a href="#styleGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-gray">5</a>
+                        </li>
+                        <li>
+                            <a href="#styleMarineBlue" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-marine-blue">6</a>
+                        </li>
+                        <li>
+                            <a href="#styleNavy" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-navy">7</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="#styleOrange" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-orange">8</a>
+                        </li>
+                        <li>
+                            <a href="#styleKhaki" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-khaki">9</a>
+                        </li>
+                        <li>
+                            <a href="#styleBlack" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-black">10</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="style-frame">
+                    <img src="img/style_8.jpg" alt="Orangeのコーディネート画像">
+                </div>
+                <div class="style-right-frame">
+                    <div class="style-textarea">
+                        <p class="style-subtitle">color #08</p>
+                        <p class="style-color-title">Orange</p>
+
+                        <a href="" target="_blank" class="style-item-link">
+                            <span class="style-item-link__name">ファインウール　クルーネックプルオーバ<br>
+                            ￥27,000 (+tax)</span><span class="style-item-link__link">view</span>
+                        </a>
+                    </div>
+                    <div class="wavy-line">
+                        <svg width="100" height="682"  viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg"> 
+                            <path d="M 30,-682 Q 150 -341 10 10 T -40 682" fill="none" stroke="#c7613c" stroke-width="2" id="wavyLineSvgOrange" class="wavy-line-svg"/>
+                        </svg> 
+                    </div>
+                </div>
+            </div>
+            <div id="styleKhaki" class="style-content khaki-content">
+                <div class="style-navigation-area">
+                    <ul class="style-navigation">
+                        <li>
+                            <a href="#styleWhite" data-box=".style-wrap" class="style-navigation-button style-nav-white">1</a>
+                        </li>
+                        <li>
+                            <a href="#styleMilkTea" data-box=".style-wrap" class="style-navigation-button style-nav-milk-tea">2</a>
+                        </li>
+                        <li>
+                            <a href="#styleSage" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-sage">3</a>
+                        </li>
+                        <li>
+                            <a href="#styleHeatherGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-heather-gray">4</a>
+                        </li>
+                        <li>
+                            <a href="#styleGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-gray">5</a>
+                        </li>
+                        <li>
+                            <a href="#styleMarineBlue" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-marine-blue">6</a>
+                        </li>
+                        <li>
+                            <a href="#styleNavy" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-navy">7</a>
+                        </li>
+                        <li>
+                            <a href="#styleOrange" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-orange">8</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="#styleKhaki" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-khaki">9</a>
+                        </li>
+                        <li>
+                            <a href="#styleBlack" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-black">10</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="style-frame">
+                    <img src="img/style_9.jpg" alt="Khakiのコーディネート画像">
+                </div>
+                <div class="style-right-frame">
+                    <div class="style-textarea">
+                        <p class="style-subtitle">color #09</p>
+                        <p class="style-color-title">Khaki</p>
+
+                        <a href="" target="_blank" class="style-item-link">
+                            <span class="style-item-link__name">ファインウール　クルーネックプルオーバ<br>
+                            ￥27,000 (+tax)</span><span class="style-item-link__link">view</span>
+                        </a>
+                    </div>
+                    <div class="wavy-line">
+                        <svg width="100" height="682"  viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg"> 
+                            <path d="M -40,-682 Q 150 -341 10 10 T 40 682" fill="none" stroke="#b4a362" stroke-width="2" id="wavyLineSvgKhaki" class="wavy-line-svg"/>
+                        </svg> 
+                    </div>
+                </div>
+            </div>
+            <div id="styleBlack" class="style-content black-content">
+                <div class="style-navigation-area">
+                    <ul class="style-navigation">
+                        <li>
+                            <a href="#styleWhite" data-box=".style-wrap" class="style-navigation-button style-nav-white">1</a>
+                        </li>
+                        <li>
+                            <a href="#styleMilkTea" data-box=".style-wrap" class="style-navigation-button style-nav-milk-tea">2</a>
+                        </li>
+                        <li>
+                            <a href="#styleSage" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-sage">3</a>
+                        </li>
+                        <li>
+                            <a href="#styleHeatherGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-heather-gray">4</a>
+                        </li>
+                        <li>
+                            <a href="#styleGray" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-gray">5</a>
+                        </li>
+                        <li>
+                            <a href="#styleMarineBlue" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-marine-blue">6</a>
+                        </li>
+                        <li>
+                            <a href="#styleNavy" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-navy">7</a>
+                        </li>
+                        <li>
+                            <a href="#styleOrange" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-orange">8</a>
+                        </li>
+                        <li>
+                            <a href="#styleKhaki" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-khaki">9</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="#styleBlack" target="_self" data-box=".style-wrap" class="style-navigation-button style-nav-black">10</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="style-frame">
+                    <img src="img/style_10.jpg" alt="Blackのコーディネート画像">
+                </div>
+                <div class="style-right-frame">
+                    <div class="style-textarea">
+                        <p class="style-subtitle">color #10</p>
+                        <p class="style-color-title">Black</p>
+
+                        <a href="" target="_blank" class="style-item-link">
+                            <span class="style-item-link__name">ファインウール　クルーネックプルオーバ<br>
+                            ￥27,000 (+tax)</span><span class="style-item-link__link">view</span>
+                        </a>
+                    </div>
+                    <div class="wavy-line">
+                        <svg width="100" height="682"  viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg"> 
+                            <path d="M 40,-682 Q 150 -341 10 10 T 0 682" fill="none" stroke="#262626" stroke-width="2" id="wavyLineSvgBlack" class="wavy-line-svg"/>
+                        </svg> 
+                    </div>
+                </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div id="pageTop"class="page-top-btn">
+            <a href="#mainVisual" target="_self">
+                <svg width="100" height="100"  viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg"> 
+                    <path d="M -100,0 Q 0 -45 0 -45 T 100 0" fill="none" stroke="#262626" stroke-width="2"/>
+                </svg>
+                <p class="page-top-text">RIDE MEDIA & DESIGN</p>
+            </a>
+        </div>
+       <div class="footer-flex-wrap">
+           <ul class="footer-left-wrap">
+               <li class="footer-left-name">
+                    <a href="#" target="_self" rel="noopener noreferrer">©️RIDE MEDIA & DESIGN</a>
+               </li>
+               <li class="footer-left-twitter">
+                    <a href="#" target="_blank" rel="noopener noreferrer"><span><i class="fab fa-twitter"></i></span></a>
+               </li>
+               <li class="footer-left-facebook">
+                    <a href="#" target="_blank" rel="noopener noreferrer"><span><i class="fab fa-facebook-f"></i></span></a>
+               </li>
+               <li class="footer-left-instagram">
+                    <a href="#" target="_blank" rel="noopener noreferrer"><span><i class="fab fa-instagram"></i></span></a>
+               </li>
+           </ul>
+           <ul class="footer-right-wrap">
+            <li class="footer-right-contact">
+                <a href="#" target="_blank">お問い合わせ(ヘルプ)</a>
+            </li>
+            <li class="footer-right-policy">
+                <a href="#" target="_blank">個人商法保護方針</a>
+            </li>
+            <li class="footer-right-notation">
+                <a href="#" target="_blank">特定商取引法に基づく通販の  </a>
+            </li>
+            <li class="footer-right-tos">
+                <a href="#" target="_blank">ご利用規約</a>
+            </li>
+        </ul>           
+       </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="js/jquery.stickystack.min.js"></script> -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
