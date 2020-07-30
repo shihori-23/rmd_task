@@ -50,9 +50,6 @@ $(document).ready(function () {
     footer: $el.footer.offset().top,
   };
 
-  console.log(scrollTop.styleWhite);
-  console.log(scrollTop.style);
-
   //　トップへ戻るの際に使用する真偽値
   var toggle = {
     pageTop: false,
@@ -86,7 +83,6 @@ $(document).ready(function () {
       top: 0,
       right: 0,
     });
-    console.log("StyleWrapを固定したよ");
   }
 
   //　sectionWrapを固定を解除関数
@@ -94,7 +90,6 @@ $(document).ready(function () {
     $el.style.css({
       position: "static",
     });
-    console.log("StyleWrapの固定を解除したよ");
   }
 
   //　指定の位置までスクロールする関数
@@ -122,29 +117,6 @@ $(document).ready(function () {
   $("#menuWrap a").click(function () {
     closeMenuNav();
   });
-
-  // style内でのスムーススクロール
-  // $('#menuWrap a[href^="#"]').click(function () {
-  //   if ($(this).attr("data-box") != undefined) {
-  //     var $box = $($(this).data("box"));
-  //     var $target = $($(this).attr("href"));
-  //     var dist = $target.position().top - $box.position().top;
-  //     $box.stop().animate(
-  //       {
-  //         scrollTop: $box.scrollTop() + dist,
-  //       },
-  //       1000,
-  //       "swing"
-  //     );
-  //   } else {
-  //     $("body,html")
-  //       .stop()
-  //       .animate({
-  //         scrollTop: $($(this).attr("href")).offset().top,
-  //       });
-  //   }
-  //   return false;
-  // });
 
   // style内でのスムーススクロール
   $('#style a[href^="#"]').click(function () {
@@ -178,7 +150,6 @@ $(document).ready(function () {
 
   //　StyleSectionの波線アニメーションのクラスを追加・削除
   const addClassWavyLine = function (win) {
-    console.log(win);
     if (win < clientHeight) {
       $(".wavy-line-svg").removeClass("is-active");
       $("#wavyLineSvgWhite").addClass("is-active");
@@ -242,7 +213,6 @@ $(document).ready(function () {
   //　sectionWrap内のスクロールの監視
   styleWrapEl.onscroll = function () {
     scrollTop.winStyleWrap = $(this).scrollTop();
-    console.log(this.scrollTop);
 
     //　Styleセクション内波線の表示
     addClassWavyLine(scrollTop.winStyleWrap);
@@ -259,7 +229,6 @@ $(document).ready(function () {
       //　一番上までスクロールしたら postion:fixed; 解除
       if (this.scrollTop > windowSize.height) {
       } else if (this.scrollTop <= windowSize.height) {
-        // console.log("スタイルセクションを上スクロールしているよ！");
         staticStyleWrap();
         scrollAnimation(scrollTop.about);
       }
